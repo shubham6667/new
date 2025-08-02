@@ -1,0 +1,51 @@
+{
+  "name": "whatsapp-clone",
+  "version": "1.0.0",
+  "description": "A real-time messaging system with WebSockets, JWT authentication, and message queues",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0",
+    "dotenv": "^16.3.1",
+    "sequelize": "^6.32.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "redis": "^4.6.7",
+    "bull": "^4.11.3",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.4",
+    "joi": "^17.9.2",
+    "winston": "^3.10.0",
+    "uuid": "^9.0.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3",
+    "sequelize-cli": "^6.6.1"
+  },
+  "keywords": [
+    "messaging",
+    "chat",
+    "websockets",
+    "real-time",
+    "jwt",
+    "redis",
+    "postgresql"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
